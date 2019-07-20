@@ -8,5 +8,5 @@ applications:
   routes:
     - route: pal-tracker-bharath-chennupati.cfapps.io
   env:
-    WELCOME_MESSAGE: Hello from the review environment
+    WELCOME_MESSAGE: Hello from the review environment - update 1
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
