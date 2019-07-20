@@ -1,6 +1,6 @@
 applications:
 - name: pal-tracker
-  instances: 1
+  instances: 2
   memory: 700M
   disk_quota: 700M
   path: build/libs/pal-tracker.jar
@@ -8,5 +8,5 @@ applications:
   routes:
     - route: pal-tracker-bharath-chennupati.cfapps.io
   env:
-    WELCOME_MESSAGE: Hello from the review environment - update 1
+    WELCOME_MESSAGE: Hello from the review environment
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
