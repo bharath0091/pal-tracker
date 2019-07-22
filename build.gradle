@@ -29,7 +29,9 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
     compile("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
-
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'   
+    
     compile("mysql:mysql-connector-java:6.0.6")
 
     testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
