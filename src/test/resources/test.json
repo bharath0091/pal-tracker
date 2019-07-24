@@ -1,0 +1,13 @@
+{
+{\n  \"label\": \"cleardb\",\n  \"provider\": null,\n  \"plan\": \"spark\",\n  \"name\": \"mysqldbbind\",\n  \"tags\": [\n    \"Data Stores\",\n    \"Cloud Databases\",\n    \"Developer Tools\",\n    \"Web-based\",\n    \"Data Store\",\n    \"Online Backup & Storage\",\n    \"Development and Test Tools\",\n    \"Single Sign-On\",\n    \"Buyable\",\n    \"relational\",\n    \"mysql\",\n    \"Cloud Security and Monitoring\"\n  ],\n  \"instance_name\": \"mysqldb\",\n  \"binding_name\": \"mysqldbbind\",\n  \"credentials\": {\n
+
+
+\"jdbcUrl\": \"jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/ad_8b0a3125ab4c245?user=b4167089add617&password=dca99b2b\",\n
+
+\"uri\": \"mysql://b4167089add617:dca99b2b@us-cdbr-iron-east-02.cleardb.net:3306/ad_8b0a3125ab4c245?reconnect=true\",\n
+\"name\": \"ad_8b0a3125ab4c245\",\n    \"hostname\": \"us-cdbr-iron-east-02.cleardb.net\",\n    \"port\": \"3306\",\n    \"username\": \"b4167089add617\",\n
+\"password\": \"dca99b2b\"\n  },\n  \"syslog_drain_url\": null,\n  \"volume_mounts\": [\n\n  ]\n}]}",
+
+
+
+}
