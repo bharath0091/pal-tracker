@@ -15,7 +15,7 @@ public class EnvController {
     private String cfInstanceIndex;
     private String cfInstanceAddr;
 
-    @Value("${vcap.services}")
+    @Value("${vcap.services:NOT_SET}")
     private String vcapServices;
 
     public EnvController(
