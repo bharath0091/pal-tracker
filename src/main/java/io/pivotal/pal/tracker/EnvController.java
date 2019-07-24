@@ -15,6 +15,9 @@ public class EnvController {
     private String cfInstanceIndex;
     private String cfInstanceAddr;
 
+    @Value("${vcap.services}")
+    private String vcapServices;
+
     public EnvController(
             @Value("${port:NOT SET}") String port,
             @Value("${memory.limit:NOT SET}") String memoryLimit,
@@ -33,6 +36,13 @@ public class EnvController {
         envMap.put("MEMORY_LIMIT", memoryLimit);
         envMap.put("CF_INSTANCE_INDEX", cfInstanceIndex);
         envMap.put("CF_INSTANCE_ADDR", cfInstanceAddr);
+        return  envMap;
+    }
+
+    @GetMapping("/envDb")
+    public Map<String, String> getEnvDb() {
+        Map<String, String> envMap = new HashMap<>();
+        envMap.put("vcapServices", vcapServices);
         return  envMap;
     }
 }
