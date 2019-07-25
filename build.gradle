@@ -40,13 +40,13 @@ dependencies {
     testCompile("org.mockito:mockito-core:2.23.4")
 }
 
-def developmentDbUrl = "jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/ad_8b0a3125ab4c245?user=b4167089add617&password=dca99b2b"
+def developmentDbUrl = "jdbc:mysql://localhost:3306/tracker_dev?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false"
 bootRun.environment([
         "WELCOME_MESSAGE": "hello",
         "SPRING_DATASOURCE_URL": developmentDbUrl,
 ])
 
-def testDbUrl = "jdbc:mysql://us-cdbr-iron-east-02.cleardb.net/ad_8b0a3125ab4c245?user=b4167089add617&password=dca99b2b&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false"
+def testDbUrl = "jdbc:mysql://localhost:3306/tracker_test?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false"
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
         "SPRING_DATASOURCE_URL": testDbUrl,
@@ -54,8 +54,8 @@ test.environment([
 
 flyway {
     url = developmentDbUrl
-    user = "b4167089add617"
-    password = "dca99b2b"
+    user = "tracker"
+    password = ""
     locations = ["filesystem:databases/tracker/migrations"]
 }
 
