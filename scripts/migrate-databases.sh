@@ -2,6 +2,7 @@
 
 set -e
 
+
 app_name="${1:-pal-tracker}"
 script_dir="${2:-.}"
 service_name="cleardb"
